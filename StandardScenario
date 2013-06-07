@@ -1,0 +1,103 @@
+<!--
+The <root> tag must contain a Name attribute that is the Name of this particular scenario (eg. 'Name = "RealDistros"').
+
+PACKAGES:
+Each <package> must exist within the <packages> tag and MUST contain all of the following attributes.
+
+Name : The Name of the Package.
+Description : The description of the package.
+Bugs : The number of bugs this particular package starts the game with.
+isOpenSource : Is it open source?  Must be set to "True" or "False".
+NerdCred : The nerd cred this package starts with (0 to 20).
+Popularity : The popularity this package starts with (0 to 20).
+SizeInMB : The size, in MB, of the package.
+Version : The major version of the software (eg "1", "3", etc.).  No minor versions (eg "3.1") should be entered here as that is used by the game).
+TypeOfSoftware : This is a number value that corresponds to a type of software.  The key is below:
+
+	1 = Web Browser
+	2 = Office Suite
+	3 = Desktop Environment
+	4 = Game
+	5 = Graphics Editing
+	6 = Programming
+	7 = Communication
+	8 = Utilities
+	9 = Multimedia
+	
+	
+DISTRO'S:
+Each <distro> must exist within the <distros> tag and MUST contain all of the following attributes:
+
+Name : The Name of the Distro.
+Users : The number of users in the distro (numbers only, do not include comma's) at the start of the game.
+Version : The major version of the distro (eg "1", "3", etc.).  No minor versions (eg "3.1") should be entered here as that is used by the game).
+Packages : A semicolon (;) delimited list, with no additional spaces, of the Names of the packages included in this Distro. (eg. "Package1;OtherPackage;YetAnotherPackage")
+
+-->
+
+<root Name="Standard" LocalDistro="">
+
+<packages>
+<package Name="Midget" Bugs="2" Description="Lightweight, simple desktop environment." NerdCred="3" Popularity="20" SizeInMB="20" TypeOfSoftware="3" Version="1" isOpenSource="True"/>
+<package Name="QDE" Bugs="3" Description="The Q Desktop Environment.  Big.  Slow.  Lots and lots of desktop widgets." NerdCred="3" Popularity="10" SizeInMB="50" TypeOfSoftware="3" Version="1" isOpenSource="True"/>
+<package Name="UCDE" Bugs="0" Description="The Ultra Confusing Desktop Environment.  There are no icons.  Only terminals." NerdCred="20" Popularity="1" SizeInMB="1" TypeOfSoftware="3" Version="1" isOpenSource="True"/>
+<package Name="FlamingRodent" Bugs="4" Description="A big, powerful web browser.  Lots of features and lots of extensions." NerdCred="3" Popularity="15" SizeInMB="10" TypeOfSoftware="1" Version="1" isOpenSource="True"/>
+<package Name="ShmoogleShrome" Bugs="2" Description="Lightweight and superfast web browser." NerdCred="3" Popularity="10" SizeInMB="10" TypeOfSoftware="1" Version="1" isOpenSource="True"/>
+<package Name="Text-O-Web" Bugs="0" Description="A Text-only web browser that runs in the Terminal." NerdCred="20" Popularity="0" SizeInMB="1" TypeOfSoftware="1" Version="1" isOpenSource="True"/>
+<package Name="ReallyFreeOffice" Bugs="4" Description="A big, powerful office suite." NerdCred="5" Popularity="15" SizeInMB="60" TypeOfSoftware="2" Version="1" isOpenSource="True"/>
+<package Name="SpAnDeX" Bugs="1" Description="Hard to use and complicated way to build documents." NerdCred="15" Popularity="2" SizeInMB="3" TypeOfSoftware="2" Version="1" isOpenSource="True"/>
+<package Name="OkayOffice" Bugs="1" Description="This office suite... is pretty ok." NerdCred="10" Popularity="10" SizeInMB="40" TypeOfSoftware="2" Version="1" isOpenSource="True"/>
+<package Name="PenguinZoomer" Bugs="1" Description="Race around and pretend that penguins are like cars." NerdCred="3" Popularity="8" SizeInMB="20" TypeOfSoftware="4" Version="1" isOpenSource="True"/>
+<package Name="FragBlast4000" Bugs="2" Description="Fancy 3D graphics and fast paced shooting of other people." NerdCred="1" Popularity="15" SizeInMB="120" TypeOfSoftware="4" Version="1" isOpenSource="False"/>
+<package Name="BurstABubble" Bugs="0" Description="There are bubbles.  You hate bubbles.  Pop those bubbles." NerdCred="0" Popularity="20" SizeInMB="25" TypeOfSoftware="4" Version="1" isOpenSource="True"/>
+<package Name="JustCards" Bugs="0" Description="It's a card game." NerdCred="0" Popularity="5" SizeInMB="20" TypeOfSoftware="4" Version="1" isOpenSource="True"/>
+<package Name="TapYerToes" Bugs="1" Description="Tap your toes to the beat of very boring music." NerdCred="0" Popularity="1" SizeInMB="15" TypeOfSoftware="4" Version="1" isOpenSource="True"/>
+<package Name="CityMax" Bugs="2" Description="Design and run a very fancy city." NerdCred="0" Popularity="15" SizeInMB="120" TypeOfSoftware="4" Version="1" isOpenSource="False"/>
+<package Name="CouchTrainer" Bugs="3" Description="Teach a couch how to be a good couch." NerdCred="0" Popularity="5" SizeInMB="65" TypeOfSoftware="4" Version="1" isOpenSource="True"/>
+<package Name="PixelPusher" Bugs="0" Description="A very simple image editor." NerdCred="1" Popularity="2" SizeInMB="2" TypeOfSoftware="5" Version="1" isOpenSource="True"/>
+<package Name="The Dork" Bugs="2" Description="Robust, powerful graphics editor." NerdCred="5" Popularity="12" SizeInMB="65" TypeOfSoftware="5" Version="1" isOpenSource="True"/>
+<package Name="Pictures-In-Folders" Bugs="0" Description="A simple photo gallery for organizing images." NerdCred="0" Popularity="8" SizeInMB="8" TypeOfSoftware="5" Version="1" isOpenSource="True"/>
+<package Name="PainterMcPaint" Bugs="1" Description="Good for painting.  Bad for anything else." NerdCred="0" Popularity="3" SizeInMB="150" TypeOfSoftware="5" Version="1" isOpenSource="True"/>
+<package Name="LunarBlackout" Bugs="4" Description="A good, flexible integrated development environment." NerdCred="10" Popularity="4" SizeInMB="120" TypeOfSoftware="6" Version="1" isOpenSource="True"/>
+<package Name="JustPascal" Bugs="0" Description="Pascal programming tools." NerdCred="11" Popularity="1" SizeInMB="40" TypeOfSoftware="6" Version="1" isOpenSource="True"/>
+<package Name="Lunduke Development Kit" Bugs="0" Description="The most awesome programming language.  Ever." NerdCred="15" Popularity="15" SizeInMB="10" TypeOfSoftware="6" Version="1" isOpenSource="True"/>
+<package Name="LargeTalk" Bugs="0" Description="Considered to be the Grand-daddy of programming tools." NerdCred="20" Popularity="2" SizeInMB="10" TypeOfSoftware="6" Version="1" isOpenSource="True"/>
+<package Name="EchsCode" Bugs="7" Description="This is a terrible development environment.  Nobody likes this or wants to use it." NerdCred="0" Popularity="0" SizeInMB="900" TypeOfSoftware="6" Version="1" isOpenSource="False"/>
+<package Name="Mailinator" Bugs="1" Description="Super advanced email client." NerdCred="0" Popularity="12" SizeInMB="80" TypeOfSoftware="7" Version="1" isOpenSource="True"/>
+<package Name="Chatchatchat" Bugs="1" Description="You know.  For chatting." NerdCred="0" Popularity="5" SizeInMB="50" TypeOfSoftware="7" Version="1" isOpenSource="True"/>
+<package Name="Fir" Bugs="0" Description="Terminal-only email client.  " NerdCred="5" Popularity="1" SizeInMB="1" TypeOfSoftware="7" Version="1" isOpenSource="True"/>
+<package Name="IRC-o-Matic" Bugs="3" Description="The only IRC client that matters." NerdCred="4" Popularity="2" SizeInMB="6" TypeOfSoftware="7" Version="1" isOpenSource="True"/>
+<package Name="Calculator" Bugs="0" Description="You do want a calculator, don't you?" NerdCred="0" Popularity="1" SizeInMB="1" TypeOfSoftware="8" Version="1" isOpenSource="True"/>
+<package Name="Video Player Thing" Bugs="1" Description="Plays videos.  Sometimes.  Then it crashes." NerdCred="0" Popularity="1" SizeInMB="10" TypeOfSoftware="9" Version="1" isOpenSource="True"/>
+<package Name="vidCastGrabber" Bugs="1" Description="Downloads and plays video podcasts." NerdCred="0" Popularity="3" SizeInMB="55" TypeOfSoftware="9" Version="1" isOpenSource="True"/>
+<package Name="emTeeVee" Bugs="2" Description="Automatically generates music videos." NerdCred="0" Popularity="2" SizeInMB="120" TypeOfSoftware="9" Version="1" isOpenSource="False"/>
+</packages>
+
+<distros>
+<distro Name="" Hype="0" Users="0" Version="1"/>
+<distro Name="Ooboontoo" Hype="0" Users="100000" Version="12" Packages="Midget;FlamingRodent;ReallyFreeOffice;PenguinZoomer;JustCards;Pictures-In-Folders;Mailinator;Chatchatchat;Calculator;Video Player"/>
+<distro Name="FloppyBeanie" Hype="0" Users="50000" Version="16" Packages="Midget;FlamingRodent;ReallyFreeOffice;SpAnDeX;PenguinZoomer;LunarBlackout"/>
+<distro Name="xTr333me" Hype="0" Users="25000" Version="7" Packages="UCDE;Text-O-Web;SpAnDeX;FragBlast4000;PixelPusher;The Dork;LargeTalk;Fir;emTeeVee;vidCastGrabber"/>
+<distro Name="CuteLittleDoggy" Hype="0" Users="15000" Version="5" Packages="QDE;FlamingRodent;ReallyFreeOffice;PenguinZoomer;Calculator;Video Player Thing"/>
+<distro Name="Trumpet" Hype="0" Users="1" Version="3" Packages="Midget;QDE;ShmoogleShrome;Text-O-Web;ReallyFreeOffice;JustCards;Calculator"/>
+<distro Name="Kooboonotoo" Hype="0" Users="45000" Version="12" Packages="QDE;FlamingRodent;ReallyFreeOffice;PenguinZoomer;BurstABubble;JustCards;The Dork;Calculator;Video Player Thing"/>
+<distro Name="LooseWare" Hype="0" Users="5000" Version="32" Packages="Midget;FlamingRodent;OkayOffice;PixelPusher;Mailinator"/>
+<distro Name="OpenSnuggle" Hype="0" Users="500" Version="14" Packages="QDE;ShmoogleShrome;ReallyFreeOffice;JustCards;Calculator"/>
+<distro Name="TeddyBearLinux" Hype="0" Users="50" Version="8" Packages="Midget;FlamingRodent;OkayOffice;BurstABubble;Mailinator"/>
+<distro Name="RedundantLinux" Hype="0" Users="200" Version="7" Packages="Midget;FlamingRodent;ReallyFreeOffice;PenguinZoomer;The Dork;Video Player Thing"/>
+<distro Name="Plebian" Hype="0" Users="8500" Version="3" Packages="Midget;FlamingRodent;OkayOffice;The Dork;Mailinator;Calculator;Video Player Thing"/>
+<distro Name="b00nd0x" Hype="0" Users="2500" Version="75" Packages="QDE;ShmoogleShrome;OkayOffice;FragBlast4000;PixelPusher;Fir"/>
+<distro Name="FreeHugz" Hype="0" Users="900" Version="1" Packages="UCDE;FlamingRodent;OkayOffice;BurstABubble;The Dork;Mailinator"/>
+<distro Name="Derpnix" Hype="0" Users="800" Version="9" Packages="Midget;ShmoogleShrome;SpAnDeX;OkayOffice;BurstABubble;PixelPusher"/>
+<distro Name="Unpronounceable" Hype="0" Users="1500" Version="3" Packages="QDE;Text-O-Web;OkayOffice;JustCards;Mailinator;Fir"/>
+<distro Name="Lozenge" Hype="0" Users="4200" Version="5" Packages="Midget;FlamingRodent;ReallyFreeOffice;PenguinZoomer;The Dork;Video Player Thing"/>
+<distro Name="Gat3way" Hype="0" Users="3350" Version="11" Packages="UCDE;ShmoogleShrome;Text-O-Web;OkayOffice;The Dork;LargeTalk"/>
+<distro Name="Prune" Hype="0" Users="810" Version="9" Packages="Midget;FlamingRodent;OkayOffice;PixelPusher;Mailinator"/>
+<distro Name="ChakaLaka" Hype="0" Users="2100" Version="3" Packages="QDE;FlamingRodent;ReallyFreeOffice;The Dork"/>
+<distro Name="SunGlassesNix" Hype="0" Users="15" Version="2" Packages="UCDE;Text-O-Web;SpAnDeX;OkayOffice;PenguinZoomer;PixelPusher;Calculator;Video Player Thing"/>
+<distro Name="nadrimajstorux" Hype="0" Users="0" Version="1" Packages=""/>
+<distro Name="Tauser Linux" Hype="0" Users="0" Version="1" Packages=""/>
+<distro Name="Mattian" Hype="0" Users="0" Version="1" Packages=""/>
+</distros>
+
+</root>
