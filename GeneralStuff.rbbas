@@ -1674,7 +1674,7 @@ Protected Module GeneralStuff
 		      
 		    case 4 // MS Screws up
 		      NewLinuxUsersDaily = NewLinuxUsersDaily + 20
-		      ShowMessage "A new version of Windews is released.  Nobody likes it.  More new users are switching to Linux!  All Linux Distro's rejoice!"
+		      ShowMessage "A new version of Windews is released.  Nobody likes it.  More new users are switching to Linux!  All Linux Distros rejoice!"
 		      
 		    case 5 // MS does good
 		      NewLinuxUsersDaily = NewLinuxUsersDaily - 20
