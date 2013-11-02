@@ -1496,19 +1496,6 @@ Protected Module GeneralStuff
 		    MyDistro.Users = 0
 		  end if
 		  
-		  if MyDistro.Users > 500 then
-		    if isRegGood = false then
-		      
-		      MyDistro.Users = 500
-		      
-		      if UnRegisteredLimitShown = false then
-		        
-		        UnRegisteredLimitShown = true
-		        ShowUnregisteredDialog
-		        
-		      end if
-		    end if
-		  end if
 		End Sub
 	#tag EndMethod
 
